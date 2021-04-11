@@ -4,3 +4,4 @@ RUN mkdir /app
 WORKDIR /app
 ADD ./Gemfile .
 RUN bundle install
+RUN bundle update
