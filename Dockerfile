@@ -4,4 +4,6 @@ RUN mkdir /app
 WORKDIR /app
 ADD ./Gemfile .
 RUN bundle install
+RUN bundle update i18n
 RUN bundle update
+RUN bundle install
