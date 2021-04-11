@@ -11,11 +11,11 @@ test:
   script:
     - echo "start test"
 
-dev:
-  stage: dev
+master:
+  stage: master
   tags:
-    - dev
+    - master
   only:
     - master
   script:
-    - echo "start dev"
+    - echo "start master"
