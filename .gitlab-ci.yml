@@ -1,5 +1,5 @@
 services:
-  - docker:dind
+  - name: docker:18.09.7-dind
 stages:
   - sit
   - uat
