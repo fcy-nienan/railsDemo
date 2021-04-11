@@ -3,9 +3,9 @@ services:
   db:
     image: postgres
     ports:
-      - "5432:5432"
+      - 5432:5432
     volumes:
-      - "/workspace/data/postgresql:/var/lib/postgresql/data"
+      - /workspace/data/postgresql:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 838502
@@ -16,7 +16,5 @@ services:
       - ".:/app"
     ports:
       - "3000:3000"
-    links:
-      - db
     depends_on:
       - db
