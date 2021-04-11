@@ -12,7 +12,7 @@ sit:
   tags:
     - sit
   script:
-    - echo "start sit"
+    - docker-compose up
 
 master:
   stage: master
@@ -21,4 +21,4 @@ master:
   only:
     - master
   script:
-    - echo "start master"
+    - docker-compose up
