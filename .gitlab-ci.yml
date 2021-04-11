@@ -3,14 +3,14 @@ stages:
   - uat
   - prod
   - master
-test:
-  stage: test
+sit:
+  stage: sit
   only:
-    - test
+    - sit
   tags:
-    - test
+    - sit
   script:
-    - echo "start test"
+    - echo "start sit"
 
 master:
   stage: master
