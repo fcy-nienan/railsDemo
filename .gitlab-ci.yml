@@ -1,0 +1,21 @@
+stages:
+  - test
+  - dev
+  - prod
+test:
+  stage: test
+  only:
+    - test
+  tags:
+    - test
+  script:
+    - sh deploy/develop.sh
+
+dev:
+  stage: dev
+  tags:
+    - dev
+  only:
+    - master
+  script:
+    - sh deploy/production.sh
