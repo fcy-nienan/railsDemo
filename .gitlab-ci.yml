@@ -10,6 +10,7 @@ sit:
   tags:
     - sit
   script:
+    - git clone http://192.168.204.130/root/railsDemo.git
     - docker-compose up
 
 master:
@@ -19,4 +20,5 @@ master:
   only:
     - master
   script:
+    - git clone http://192.168.204.130/root/railsDemo.git
     - docker-compose up
