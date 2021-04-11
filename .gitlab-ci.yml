@@ -1,7 +1,8 @@
 stages:
-  - test
-  - dev
+  - sit
+  - uat
   - prod
+  - master
 test:
   stage: test
   only:
